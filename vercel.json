@@ -9,11 +9,5 @@
     { "src": "/docs/(.*)", "status": 301, "headers": { "Location": "/$1" } },
     { "src": "/builder", "dest": "/builder.html" },
     { "src": "/(?<name>[^/]+).*", "dest": "/api/$name.ts" }
-  ],
-  "env": {
-    "GH_TOKENS": "@badgen-gh-tokens",
-    "SENTRY_DSN": "@badgen-sentry-dsn",
-    "TRACKING_GA": "@badgen-tracking-ga",
-    "GITLAB_TOKENS": "@badgen-gl-tokens"
-  }
+  ]
 }
